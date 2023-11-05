@@ -1,34 +1,45 @@
 # Tic_Tac_Toe_AI_Version
 
 Problem Title:
+
 Implement Tic Tac Toe Game with Minimax and Alpha-Beta Pruning Algorithm.
+
 Problem Description:
+
 In this assignment, we need to implement the classic game of Tic Tac Toe as an adversarial
 search problem and develop an AI player using the minimax algorithm with alpha-beta pruning.
 We have to create a program that allows human vs. computer and computer vs. computer
 gameplay and should print the game board on the console after every move.
+
 Tools and Languages Used:
+
 ➢ PyCharm IDE
 ➢ Python Language
 ➢ MS Word
+
 Tik Tac Toe:
+
 Tic Tac Toe is a game for two players on a 3x3 grid. They take turns putting their symbol (often
 "X" and "O") in an empty space. The aim is to have three of your symbols in a row, either
 horizontally, vertically, or diagonally, before your opponent. The first player to do this win. If
 the grid is full and no one wins, the game ends in a draw.
+
+
 Minimax Algorithm in Game Theory (Alpha-Beta Pruning):
+
 Alpha-Beta pruning is not actually a new algorithm, but rather an optimization technique for
 the minimax algorithm. It reduces the computation time by a huge factor. This allows us to
 search much faster and even go into deeper levels in the game tree. It cuts off branches in the
 game tree which need not be searched because there already exists a better move available. It
 is called Alpha-Beta pruning because it passes 2 extra parameters in the minimax function,
 namely alpha and beta.
+
 Let’s define the parameters alpha and beta.
 Alpha is the best value that the maximizer currently can guarantee at that level or above.
 Beta is the best value that the minimizer currently can guarantee at that level or below.
 
-3
 Pseudocode:
+
 function minimax (node, depth, isMaximizingPlayer, alpha, beta):
  if node is a leaf node:
  return value of the node
